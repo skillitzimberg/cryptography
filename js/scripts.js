@@ -14,6 +14,14 @@ function findSquare(stringLength) {
   return squareRoot;
 };
 
+function mapStringToGrid(processedString, squareSize) {
+  var gridRows = [];
+  for (var index = 0; index < processedString.length; index += squareSize) {
+    gridRows.push(processedString.slice(index, index + squareSize));
+  }
+  return gridRows;
+}
+
 function cryptoController(input) {
   var processedString = preprocessInput(input);
   var squareSize = findSquare(processedString.length);

@@ -19,7 +19,7 @@ This program takes a string and encrypts it using a cryptosquare
 - [x] ** Expect: ** findSquare(9) === 3;
 
 #### Spec: map string to grid
-- [ ] ** Expect: ** mapStringToGrid("ilikecode") === row0="ili", row1="kec", row2="ode"
+- [x] ** Expect: ** mapStringToGrid("ilikecode") === row0="ili", row1="kec", row2="ode"
 
 #### Spec: extract crypto string
 - [ ] ** Expect: ** extractCrypto(row0="ili", row1="kec", row2="ode") === "ikole dice"

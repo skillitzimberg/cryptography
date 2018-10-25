@@ -1,0 +1,12 @@
+#crypto-input {
+  width: 500px;
+}
+
+.crypto-square {
+  margin: 20px 0;
+  display: none;
+}
+
+#crypto-output {
+  margin: 20px 0;
+}

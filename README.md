@@ -13,19 +13,19 @@ This program takes a string and encrypts it using a cryptosquare
 - [x] ** Expect: ** preprocessInput("I like code.") === "i like code.";
 
 #### Spec: strip spaces and punctuation from string
-- [x] ** Expect: ** preprocessInput("I like code.") === "ilikecode";
+- [ ] ** Expect: ** preprocessInput("I like code.") === "ilikecode";
 
 #### Spec: determine the grid size, smallest square that fits input size
-- [x] ** Expect: ** findSquare(9) === 3;
+- [ ] ** Expect: ** findSquare(9) === 3;
 
 #### Spec: map string to grid
-- [x] ** Expect: ** mapStringToGrid("ilikecode") === row0="ili", row1="kec", row2="ode"
+- [ ] ** Expect: ** mapStringToGrid("ilikecode") === row0="ili", row1="kec", row2="ode"
 
 #### Spec: extract crypto string
-- [x] ** Expect: ** extractCrypto(row0="ili", row1="kec", row2="ode") === "ikole dice"
+- [ ] ** Expect: ** extractCrypto(row0="ili", row1="kec", row2="ode") === "ikole dice"
 
 #### process input to crypto string
-- [x] ** Expect: ** cryptoController("I like code.") === "ikole dice"
+- [ ] ** Expect: ** cryptoController("I like code.") === "ikole dice"
 
 
 ## Setup/Installation Requirements

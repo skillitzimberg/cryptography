@@ -1,7 +1,14 @@
+function preprocessInput(inputString) {
+  var lowerCased = inputString.toLowerCase();
+  return lowerCased;
+};
+
 function cryptoController(input) {
-  console.log("called controller");
-  return input;
-}
+  var processedString = preprocessInput(input);
+
+  console.log(processedString);
+  return processedString;
+};
 
 
 $(function() {

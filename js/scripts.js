@@ -22,12 +22,24 @@ function mapStringToGrid(processedString, squareSize) {
   return gridRows;
 }
 
+function extractCrypto(gridRows, squareSize) {
+  var encryptedStringNoSpaces = "";
+  for (var col = 0; col < squareSize; col++) {
+    for (var row = 0; row < gridRows.length; row++) {
+      encryptedStringNoSpaces += gridRows[row].charAt(col);
+      
+    }
+  }
+}
+
 function cryptoController(input) {
   var processedString = preprocessInput(input);
   var squareSize = findSquare(processedString.length);
+  var gridRows = mapStringToGrid(processedString, squareSize);
+  var cryptoString = extractCrypto(gridRows, squareSize);
 
-  console.log(processedString);
-  return processedString;
+  console.log(gridRows, cryptoString);
+  return cryptoString;
 };
 
 

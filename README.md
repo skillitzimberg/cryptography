@@ -22,7 +22,10 @@ This program takes a string and encrypts it using a cryptosquare
 - [x] ** Expect: ** mapStringToGrid("ilikecode") === row0="ili", row1="kec", row2="ode"
 
 #### Spec: extract crypto string
-- [ ] ** Expect: ** extractCrypto(row0="ili", row1="kec", row2="ode") === "ikole dice"
+- [x] ** Expect: ** extractCrypto(row0="ili", row1="kec", row2="ode") === "ikoledice"
+
+#### Spec: add spaces to crypto string
+- [ ] ** Expect: ** spaceCrypto("ikoledice") === "ikole dice"
 
 #### process input to crypto string
 - [ ] ** Expect: ** cryptoController("I like code.") === "ikole dice"

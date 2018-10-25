@@ -16,7 +16,7 @@ This program takes a string and encrypts it using a cryptosquare
 - [x] ** Expect: ** preprocessInput("I like code.") === "ilikecode";
 
 #### Spec: determine the grid size, smallest square that fits input size
-- [ ] ** Expect: ** findSquare(9) === 3;
+- [x] ** Expect: ** findSquare(9) === 3;
 
 #### Spec: map string to grid
 - [ ] ** Expect: ** mapStringToGrid("ilikecode") === row0="ili", row1="kec", row2="ode"

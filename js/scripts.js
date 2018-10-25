@@ -27,9 +27,18 @@ function extractCrypto(gridRows, squareSize) {
   for (var col = 0; col < squareSize; col++) {
     for (var row = 0; row < gridRows.length; row++) {
       encryptedStringNoSpaces += gridRows[row].charAt(col);
-      
+
     }
   }
+  return encryptedStringNoSpaces;
+}
+
+function addSpacesToString(encryptedStringNoSpaces, spaceEvery) {
+  var stringChunks = [];
+  for (var index = 0; index < encryptedStringNoSpaces.length; index += spaceEvery) {
+    stringChunks.push(encryptedStringNoSpaces.slice(index, index + spaceEvery));
+  }
+  return stringChunks.join(" ");
 }
 
 function cryptoController(input) {
@@ -37,9 +46,9 @@ function cryptoController(input) {
   var squareSize = findSquare(processedString.length);
   var gridRows = mapStringToGrid(processedString, squareSize);
   var cryptoString = extractCrypto(gridRows, squareSize);
+  var result = addSpacesToString(cryptoString, 5);
 
-  console.log(gridRows, cryptoString);
-  return cryptoString;
+  return result;
 };
 
 

@@ -13,7 +13,7 @@ This program takes a string and encrypts it using a cryptosquare
 - [x] ** Expect: ** preprocessInput("I like code.") === "i like code.";
 
 #### Spec: strip spaces and punctuation from string
-- [ ] ** Expect: ** preprocessInput("I like code.") === "ilikecode";
+- [x] ** Expect: ** preprocessInput("I like code.") === "ilikecode";
 
 #### Spec: determine the grid size, smallest square that fits input size
 - [ ] ** Expect: ** findSquare(9) === 3;

@@ -1,6 +1,9 @@
 function preprocessInput(inputString) {
   var lowerCased = inputString.toLowerCase();
-  return lowerCased;
+  var spaceAndPunctuationRegex = /[^a-z0-9]/ig;
+  var processed =  lowerCased.replace(spaceAndPunctuationRegex, "");
+  
+  return processed;
 };
 
 function cryptoController(input) {
